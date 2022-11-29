@@ -1,0 +1,46 @@
+<main class="main-wrapper">
+    <div class="main-container">
+        <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="wrapper">
+                <div class="login-form--item">
+                    <div class="card">
+                        <div class="jeton jeton--red"></div>
+                        <label for="player1" class="login-form--title">Player 1</label>
+                    </div>
+                    <input
+                        type="text"
+                        id="player1"
+                        placeholder="Enter pseudo.."
+                        pattern="^[a-zA-Zàéèç0-9]{1,15}$"
+                        required
+                        formControlName="player1"
+                        name="player1"
+                        class="login-form--input"
+                    >
+                </div>
+                <div class="login-form--item">
+                    <div class="card">
+                        <div class="jeton jeton--yellow"></div>
+                        <label for="player2" class="login-form--title">Player 2</label>
+                    </div>
+                    <input
+                        type="text"
+                        id="player2"
+                        placeholder="Enter pseudo.."
+                        pattern="^[a-zA-Zàéèç0-9]{1,15}$"
+                        required
+                        formControlName="player2"
+                        name="player2"
+                        class="login-form--input"
+                    >
+                </div>
+            </div>
+
+            <button type="submit"
+                class="login-form--button"
+            >
+                play
+            </button>
+        </form>
+    </div>
+</main>

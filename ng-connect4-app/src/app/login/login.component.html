@@ -2,7 +2,7 @@
     <div class="main-container">
         <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="wrapper">
-                <div class="login-form--item">
+                <div class="login-form--item rounded-lg">
                     <div class="card">
                         <div class="jeton jeton--red"></div>
                         <label for="player1" class="login-form--title">Player 1</label>
@@ -15,10 +15,10 @@
                         required
                         formControlName="player1"
                         name="player1"
-                        class="login-form--input"
+                        class="login-form--input rounded-lg p-2"
                     >
                 </div>
-                <div class="login-form--item">
+                <div class="login-form--item rounded-lg">
                     <div class="card">
                         <div class="jeton jeton--yellow"></div>
                         <label for="player2" class="login-form--title">Player 2</label>
@@ -31,7 +31,7 @@
                         required
                         formControlName="player2"
                         name="player2"
-                        class="login-form--input"
+                        class="login-form--input rounded-lg p-2"
                     >
                 </div>
             </div>
